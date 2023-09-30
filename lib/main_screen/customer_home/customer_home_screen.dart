@@ -1,6 +1,9 @@
 import 'package:ecommerce_predict/explore/explore_ui.dart';
+import 'package:ecommerce_predict/main_screen/cart.dart';
 import 'package:ecommerce_predict/main_screen/category/category.dart';
 import 'package:ecommerce_predict/main_screen/customer_home/home.dart';
+import 'package:ecommerce_predict/main_screen/stores.dart';
+import 'package:ecommerce_predict/main_screen/user_profile.dart';
 import 'package:flutter/material.dart';
 
 class CustomerHomeScreen extends StatefulWidget {
@@ -17,16 +20,10 @@ class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   final List<Widget> _bottomNavBarTabs = const [
     HomeScreen(),
     CategoryScreeen(),
-    Center(
-      child: Text('Store Screen'),
-    ),
-    Center(
-      child: Text('Cart Screen'),
-    ),
+    StoreScreen(),
+    CartScreen(),
     ExploreLandingPage(),
-    Center(
-      child: Text('Profile Screen'),
-    )
+    ProfileScreen(),
   ];
 
   @override
