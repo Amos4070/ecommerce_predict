@@ -1,16 +1,19 @@
 List<String> maincateg = [
-  'men',
-  'women',
-  'electronics',
-  'accessories',
-  'shoes',
-  'home & garden',
-  'beauty',
-  'kids',
-  'bags'
+  'cereals',
+  'tubers',
+  'legumes',
+  'vegetable & fruits',
+  'sugars',
+  'meats & eggs',
+  'dairy',
+  'oil',
+  'beverages',
+  'equipments',
+  'chemicals',
+  'property'
 ];
 
-List<String> men = [
+List<String> cereals = [
   'shirt',
   't-shirt',
   'jacket',
@@ -21,7 +24,7 @@ List<String> men = [
   'suit',
   'other',
 ];
-List<String> women = [
+List<String> tubers = [
   'dress',
   '2pcs sets',
   't-shirt',
@@ -33,7 +36,7 @@ List<String> women = [
   'jacket',
   'other'
 ];
-List<String> electronics = [
+List<String> sugars = [
   'phone',
   'computer',
   'laptop',
@@ -50,24 +53,24 @@ List<String> electronics = [
   'other'
 ];
 
-List<String> shoes = [
-  'men slippers',
-  'men classic',
-  'men casual',
-  'men boots',
-  'men canvas',
-  'men sport',
-  'men snadals',
-  'home slippers',
-  'women slippers',
-  'women boots',
-  'women heels',
-  'women sport',
-  'women snadals',
+List<String> legumes = [
+  'slippers',
+  'classic',
+  'casual',
+  'boots',
+  'canvas',
+  'sport',
+  'sandals',
+  'slippers',
+  'slippers',
+  'boots',
+  'heels',
+  'sport',
+  'sandals',
   'other'
 ];
 
-List<String> homeandgarden = [
+List<String> dairy = [
   'living room',
   'bed room',
   'dinning room',
@@ -80,19 +83,19 @@ List<String> homeandgarden = [
   'other'
 ];
 
-List<String> beauty = [
+List<String> beverages = [
   'body care',
   'hair care',
-  'men perfume',
-  'women perfume',
+  'perfume',
+  'fragrance',
   'make up',
   'other'
 ];
 
-List<String> accessories = [
+List<String> meatseggs = [
   'hat',
-  'men sunglass',
-  'w sunglass',
+  'shade',
+  'sunglass',
   'classic watch',
   'gloves',
   'belt waist',
@@ -103,7 +106,7 @@ List<String> accessories = [
   'other'
 ];
 
-List<String> kids = [
+List<String> oil = [
   'girls sets',
   'girls dress',
   'girls top',
@@ -119,13 +122,20 @@ List<String> kids = [
   'other'
 ];
 
-List<String> bags = [
+List<String> vegetablefruits = [
   'wallet',
   'clutch',
   'chest bag',
   'back pack',
-  'business bags',
-  'laptop bags',
-  'women bags',
+  'business',
+  'laptop',
+  'handbag',
   'other'
 ];
+
+/// this os added
+List<String> equipments = ['tractor', 'cutlass', 'other'];
+
+List<String> property = ['chicken pen', 'land', 'farm', 'other'];
+
+List<String> chemicals = ['force up', 'attrazine', 'other'];

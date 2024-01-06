@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "241664108508",
+    "firebase_url": "https://predict-2a3d1-default-rtdb.firebaseio.com",
+    "project_id": "predict-2a3d1",
+    "storage_bucket": "predict-2a3d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241664108508:android:f76f4d08111f39fa649119",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_predict"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL-mpqkJ9SMasY_l4WSHzp9dzDVc3H5Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

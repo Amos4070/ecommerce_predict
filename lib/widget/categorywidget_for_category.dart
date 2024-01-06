@@ -30,11 +30,11 @@ class SliderBar extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                mainCategoryName == 'beauty'
+                mainCategoryName == 'beverages'
                     ? const Text('')
                     : const Text('<<', style: categStyle),
                 Text(mainCategoryName.toUpperCase(), style: categStyle),
-                mainCategoryName == 'men'
+                mainCategoryName == 'cereals'
                     ? const Text('')
                     : const Text('>>', style: categStyle),
               ],

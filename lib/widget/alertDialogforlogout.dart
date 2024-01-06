@@ -1,0 +1,25 @@
+import 'package:flutter/cupertino.dart';
+
+class MyAlertDialog {
+  static void showMyDialog(
+      {required BuildContext context,
+      required String title,
+      required Function() tabNo,
+      required Function() tabYes,
+      required String content}) {
+    showCupertinoDialog(
+        context: context,
+        builder: (BuildContext context) => CupertinoAlertDialog(
+              title: Text(title),
+              content: Text(content),
+              actions: <CupertinoDialogAction>[
+                CupertinoDialogAction(
+                    onPressed: tabNo, child: const Text('No')),
+                CupertinoDialogAction(
+                    isDestructiveAction: true,
+                    onPressed: tabYes,
+                    child: const Text('Yes')),
+              ],
+            ));
+  }
+}
