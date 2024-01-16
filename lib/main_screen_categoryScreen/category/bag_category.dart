@@ -37,14 +37,14 @@ class VegetableFruitsCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children:
-                              List.generate(vegetablefruits.length, (index) {
+                          children: List.generate(vegetablefruits.length - 1,
+                              (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'vegetable & fruits',
-                              subCategoryName: vegetablefruits[index],
+                              subCategoryName: vegetablefruits[index + 1],
                               assetName:
                                   'images/vegetablefruits/vegetable$index.jpg',
-                              subCategoryLabel: vegetablefruits[index],
+                              subCategoryLabel: vegetablefruits[index + 1],
                             );
                           })),
                     ),

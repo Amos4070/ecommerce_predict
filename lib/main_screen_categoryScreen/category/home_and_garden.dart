@@ -37,12 +37,12 @@ class DairyCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(dairy.length, (index) {
+                          children: List.generate(dairy.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'dairy',
-                              subCategoryName: dairy[index],
+                              subCategoryName: dairy[index + 1],
                               assetName: 'images/dairy/dairy$index.jpg',
-                              subCategoryLabel: dairy[index],
+                              subCategoryLabel: dairy[index + 1],
                             );
                           })),
                     ),

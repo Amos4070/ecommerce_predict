@@ -37,12 +37,12 @@ class TuberCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(tubers.length, (index) {
+                          children: List.generate(tubers.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'tubers',
-                              subCategoryName: tubers[index],
+                              subCategoryName: tubers[index + 1],
                               assetName: 'images/tubers/tubers$index.jpg',
-                              subCategoryLabel: tubers[index],
+                              subCategoryLabel: tubers[index + 1],
                             );
                           })),
                     ),

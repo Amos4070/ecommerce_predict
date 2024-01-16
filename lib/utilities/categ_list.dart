@@ -1,4 +1,5 @@
 List<String> maincateg = [
+  'select category',
   'cereals',
   'tubers',
   'legumes',
@@ -14,63 +15,68 @@ List<String> maincateg = [
 ];
 
 List<String> cereals = [
-  'shirt',
-  't-shirt',
-  'jacket',
-  'vest',
-  'coat',
-  'jeans',
-  'shorts',
-  'suit',
+  'subcategory',
+  'rice',
+  'maize',
+  'wheat',
+  'barley',
+  'sorghum',
+  'oat',
+  'rye',
+  'millet',
   'other',
 ];
 List<String> tubers = [
-  'dress',
-  '2pcs sets',
-  't-shirt',
-  'top',
-  'skirt',
-  'jeans',
-  'pants',
-  'coat',
-  'jacket',
+  'subcategory',
+  'potato',
+  'yam',
+  'cassava',
+  'jicama',
+  'artichoke',
+  'taro',
+  'oca',
+  'ulluco',
+  'coco-yam',
   'other'
 ];
 List<String> sugars = [
-  'phone',
-  'computer',
-  'laptop',
-  'smart tv',
-  'phone holder',
-  'charger',
-  'usb cables',
-  'head phone',
-  'smart watch',
-  'tablet',
-  'mouse',
-  'keyboard',
-  'gaming',
+  'subcategory',
+  'candies',
+  'saccharine',
+  'soda',
+  'fruit juice',
+  'caramel',
+  'sugar',
+  'glucose',
+  'sucrose',
+  'Icing sugar',
+  'sugar cane',
+  'honey',
+  'lactose',
+  'maltose',
   'other'
 ];
 
 List<String> legumes = [
-  'slippers',
-  'classic',
-  'casual',
-  'boots',
-  'canvas',
-  'sport',
-  'sandals',
-  'slippers',
-  'slippers',
-  'boots',
-  'heels',
-  'sport',
-  'sandals',
+  'subcategory',
+  'lentils',
+  'Beans',
+  'Black Beans',
+  'Peas',
+  'Soybeans',
+  'lima beans',
+  'green beans',
+  'pinto beans',
+  'mung beans',
+  'split peas',
+  'lupini beans',
+  'kidney beans',
+  'navy beans',
   'other'
 ];
 
 List<String> dairy = [
+  'subcategory',
   'living room',
   'bed room',
   'dinning room',
@@ -84,6 +90,7 @@ List<String> dairy = [
 ];
 
 List<String> beverages = [
+  'subcategory',
   'body care',
   'hair care',
   'perfume',
@@ -93,6 +100,7 @@ List<String> beverages = [
 ];
 
 List<String> meatseggs = [
+  'subcategory',
   'hat',
   'shade',
   'sunglass',
@@ -107,6 +115,7 @@ List<String> meatseggs = [
 ];
 
 List<String> oil = [
+  'subcategory',
   'girls sets',
   'girls dress',
   'girls top',
@@ -123,6 +132,7 @@ List<String> oil = [
 ];
 
 List<String> vegetablefruits = [
+  'subcategory',
   'wallet',
   'clutch',
   'chest bag',
@@ -134,8 +144,8 @@ List<String> vegetablefruits = [
 ];
 
 /// this os added
-List<String> equipments = ['tractor', 'cutlass', 'other'];
+List<String> equipments = ['subcategory', 'tractor', 'cutlass', 'other'];
 
-List<String> property = ['chicken pen', 'land', 'farm', 'other'];
+List<String> property = ['subcategory', 'chicken pen', 'land', 'farm', 'other'];
 
-List<String> chemicals = ['force up', 'attrazine', 'other'];
+List<String> chemicals = ['subcategory', 'force up', 'attrazine', 'other'];

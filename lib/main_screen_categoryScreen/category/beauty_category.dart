@@ -37,12 +37,13 @@ class BeverageCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(beverages.length, (index) {
+                          children:
+                              List.generate(beverages.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'beverages',
-                              subCategoryName: beverages[index],
+                              subCategoryName: beverages[index + 1],
                               assetName: 'images/beverages/beverages$index.jpg',
-                              subCategoryLabel: beverages[index],
+                              subCategoryLabel: beverages[index + 1],
                             );
                           })),
                     ),

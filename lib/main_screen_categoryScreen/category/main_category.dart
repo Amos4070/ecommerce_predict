@@ -37,12 +37,12 @@ class CerealCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(cereals.length, (index) {
+                          children: List.generate(cereals.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'cereals',
-                              subCategoryName: cereals[index],
+                              subCategoryName: cereals[index + 1],
                               assetName: 'images/cereals/cereals$index.jpg',
-                              subCategoryLabel: cereals[index],
+                              subCategoryLabel: cereals[index + 1],
                             );
                           })),
                     ),

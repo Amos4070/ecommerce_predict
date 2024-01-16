@@ -37,12 +37,12 @@ class SugarCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(sugars.length, (index) {
+                          children: List.generate(sugars.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'sugars',
-                              subCategoryName: sugars[index],
+                              subCategoryName: sugars[index + 1],
                               assetName: 'images/sugars/sugars$index.jpg',
-                              subCategoryLabel: sugars[index],
+                              subCategoryLabel: sugars[index + 1],
                             );
                           })),
                     ),

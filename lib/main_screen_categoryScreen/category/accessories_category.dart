@@ -37,12 +37,13 @@ class MeatEggCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(meatseggs.length, (index) {
+                          children:
+                              List.generate(meatseggs.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'meats & eggs',
-                              subCategoryName: meatseggs[index],
+                              subCategoryName: meatseggs[index + 1],
                               assetName: 'images/meatseggs/meats$index.jpg',
-                              subCategoryLabel: meatseggs[index],
+                              subCategoryLabel: meatseggs[index + 1],
                             );
                           })),
                     ),

@@ -37,12 +37,12 @@ class OilCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(oil.length, (index) {
+                          children: List.generate(oil.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'oil',
-                              subCategoryName: oil[index],
+                              subCategoryName: oil[index + 1],
                               assetName: 'images/oil/oil$index.jpg',
-                              subCategoryLabel: oil[index],
+                              subCategoryLabel: oil[index + 1],
                             );
                           })),
                     ),

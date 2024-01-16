@@ -37,13 +37,13 @@ class PropertyCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(property.length, (index) {
+                          children: List.generate(property.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'property',
-                              subCategoryName: property[index],
+                              subCategoryName: property[index + 1],
                               // TODO(musefiu_ojo_amos):  image here
                               assetName: 'images/property/prop$index.jpeg',
-                              subCategoryLabel: property[index],
+                              subCategoryLabel: property[index + 1],
                             );
                           })),
                     ),

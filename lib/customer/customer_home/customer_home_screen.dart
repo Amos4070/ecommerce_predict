@@ -1,28 +1,33 @@
+import 'package:ecommerce_predict/customer/cart.dart';
 import 'package:ecommerce_predict/customer/stores.dart';
-import 'package:ecommerce_predict/supplier/upload_products/UploadProducts.dart';
+import 'package:ecommerce_predict/customer/user_profile.dart';
+import 'package:ecommerce_predict/explore/explore_ui.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../../customer/customer_home/home.dart';
 import '../../main_screen_categoryScreen/category/category.dart';
-import '../dashboard/dashboard_Screen.dart';
+import 'home.dart';
 
-class SupplierHomeScreen extends StatefulWidget {
-  const SupplierHomeScreen({Key? key}) : super(key: key);
+class CustomerHomeScreen extends StatefulWidget {
+  const CustomerHomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<SupplierHomeScreen> createState() => _SupplierHomeScreenState();
+  State<CustomerHomeScreen> createState() => _CustomerHomeScreenState();
 }
 
-class _SupplierHomeScreenState extends State<SupplierHomeScreen> {
+class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   int _selectedIndex = 0;
 
   /// this will change to the screen of the selected bottom nav bar
-  final List<Widget> _bottomNavBarTabs = const [
-    HomeScreen(),
-    CategoryScreeen(),
-    StoreScreen(),
-    DashBoardScreen(),
-    UploadProductScreen()
+  final List<Widget> _bottomNavBarTabs = [
+    const HomeScreen(),
+    const CategoryScreeen(),
+    const StoreScreen(),
+    const CartScreen(),
+    const ExploreLandingPage(),
+    ProfileScreen(
+      documentId: FirebaseAuth.instance.currentUser!.uid,
+    ),
   ];
 
   @override
@@ -44,8 +49,9 @@ class _SupplierHomeScreenState extends State<SupplierHomeScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Category'),
           BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'Stores'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.dashboard), label: 'Dashboard'),
-          BottomNavigationBarItem(icon: Icon(Icons.upload), label: 'Upload'),
+              icon: Icon(Icons.shopping_cart), label: 'Cart'),
+          BottomNavigationBarItem(icon: Icon(Icons.explore), label: 'Explore'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],
         onTap: (index) {
           setState(() {

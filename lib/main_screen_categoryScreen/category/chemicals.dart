@@ -37,13 +37,14 @@ class ChemicalCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(chemicals.length, (index) {
+                          children:
+                              List.generate(chemicals.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'chemicals',
-                              subCategoryName: chemicals[index],
+                              subCategoryName: chemicals[index + 1],
                               // TODO(musefiu_ojo_amos): image here
                               assetName: 'images/chemicals/chem$index.jpeg',
-                              subCategoryLabel: chemicals[index],
+                              subCategoryLabel: chemicals[index + 1],
                             );
                           })),
                     ),

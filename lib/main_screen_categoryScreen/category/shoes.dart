@@ -37,12 +37,12 @@ class LegumesCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(legumes.length, (index) {
+                          children: List.generate(legumes.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'legumes',
-                              subCategoryName: legumes[index],
+                              subCategoryName: legumes[index + 1],
                               assetName: 'images/legumes/legumes$index.jpg',
-                              subCategoryLabel: legumes[index],
+                              subCategoryLabel: legumes[index + 1],
                             );
                           })),
                     ),

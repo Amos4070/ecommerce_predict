@@ -37,13 +37,14 @@ class EquipmentCategory extends StatelessWidget {
                           mainAxisSpacing: 40,
                           crossAxisSpacing: 15,
                           crossAxisCount: 3,
-                          children: List.generate(equipments.length, (index) {
+                          children:
+                              List.generate(equipments.length - 1, (index) {
                             return SubCategoryModel(
                               mainCategoryName: 'equipments',
-                              subCategoryName: equipments[index],
+                              subCategoryName: equipments[index + 1],
                               //// TODO(musefiu_ojo_amos): image
                               assetName: 'images/equipments/equi$index.jpeg',
-                              subCategoryLabel: equipments[index],
+                              subCategoryLabel: equipments[index + 1],
                             );
                           })),
                     ),
